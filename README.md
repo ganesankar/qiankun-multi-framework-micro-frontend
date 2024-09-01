@@ -1,4 +1,4 @@
-# Qiankun(Single-SPA) based Multi Framework - Micro Frontend setup using Webpack Module Federation in Monorepo using Lerna
+# Qiankun(Single-SPA) based Multi Framework - Micro Frontend setup using  Lerna in Monorepo 
 
 ### App1 (Remote App, built with React)
 ### App2 (Host App, built with Angular)
