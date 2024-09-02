@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export default function SideBar() {
+export default function Header() {
   const menuList = [
     { path: "/home", text: "Home" },
     { path: "/react", text: "React" },
