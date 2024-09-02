@@ -2364,6 +2364,11 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
+"@preline/theme-switch@^2.4.1":
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/@preline/theme-switch/-/theme-switch-2.4.1.tgz#4985ca65e33eec1bd59b4bd854de837ed84307da"
+  integrity sha512-MLdJFiVKFRUUUYnpqyQbxNNhAwmG9kdJY6yst2WTWASU6HXKNKMJDTDJyN2V3A1AU6Koyd6OMHt7DlmEqz1zxQ==
+
 "@remix-run/router@1.19.1":
   version "1.19.1"
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.19.1.tgz#984771bfd1de2715f42394c87fb716c1349e014f"

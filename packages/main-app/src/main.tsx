@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "preline/preline";
 import "./index.css";
 import App from "./App";
 import {
@@ -52,7 +53,7 @@ const microApps = [
     name: "sub-vue2",
     entry: "//localhost:3002",
     container: "#sub-app",
-    activeRule: "/vue2",
+    activeRule: "/vue",
   },
 ];
 
