@@ -10,7 +10,7 @@ export default function Footer() {
   const menuUIList = menuList.map((item) => (
     <NavLink
       to={item.path}
-      className="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+      className="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-slate-200 dark:hover:bg-slate-700 dark:focus:bg-slate-700"
       key={item.path}
     >
       <div className="">{item.text}</div>
@@ -19,25 +19,25 @@ export default function Footer() {
   return (
     <>
       <footer className="flex  max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="py-6 border-t border-gray-200 dark:border-neutral-700">
+        <div className="py-6 border-t border-gray-200 dark:border-slate-700">
           <div className="flex flex-wrap justify-between items-center gap-2">
             <div>
-              <p className="text-xs text-gray-600 dark:text-neutral-400">
+              <p className="text-xs text-gray-600 dark:text-slate-400">
                 © 2024 Preline Labs.
               </p>
             </div>
             <ul className="flex flex-wrap items-center">
-              <li className="inline-block relative pe-4 text-xs last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-1.5 before:-translate-y-1/2 before:size-[3px] before:rounded-full before:bg-gray-400 dark:text-neutral-500 dark:before:bg-neutral-600">
+              <li className="inline-block relative pe-4 text-xs last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-1.5 before:-translate-y-1/2 before:size-[3px] before:rounded-full before:bg-gray-400 dark:text-slate-500 dark:before:bg-slate-600">
                 <a
-                  className="text-xs text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400"
+                  className="text-xs text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-slate-500 dark:hover:text-slate-400"
                   href="#"
                 >
                   X (Twitter)
                 </a>
               </li>
-              <li className="inline-block relative pe-4 text-xs last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-1.5 before:-translate-y-1/2 before:size-[3px] before:rounded-full before:bg-gray-400 dark:text-neutral-500 dark:before:bg-neutral-600">
+              <li className="inline-block relative pe-4 text-xs last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-1.5 before:-translate-y-1/2 before:size-[3px] before:rounded-full before:bg-gray-400 dark:text-slate-500 dark:before:bg-slate-600">
                 <a
-                  className="text-xs text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400"
+                  className="text-xs text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-slate-500 dark:hover:text-slate-400"
                   href="#"
                 >
                   Dribbble
@@ -45,7 +45,7 @@ export default function Footer() {
               </li>
               <li className="inline-block pe-4 text-xs">
                 <a
-                  className="text-xs text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-neutral-500 dark:hover:text-neutral-400"
+                  className="text-xs text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:outline-none focus:decoration-2 dark:text-slate-500 dark:hover:text-slate-400"
                   href="#"
                 >
                   Github
@@ -54,7 +54,7 @@ export default function Footer() {
               <li className="inline-block">
                 <button
                   type="button"
-                  className="hs-dark-mode hs-dark-mode-active:hidden relative flex justify-center items-center size-7 border border-gray-200 text-gray-500 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                  className="hs-dark-mode hs-dark-mode-active:hidden relative flex justify-center items-center size-7 border border-gray-200 text-gray-500 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:border-slate-700 dark:text-slate-400 dark:hover:bg-slate-700 dark:focus:bg-slate-700"
                   data-hs-theme-click-value="dark"
                 >
                   <span className="sr-only">Dark</span>
@@ -75,7 +75,7 @@ export default function Footer() {
                 </button>
                 <button
                   type="button"
-                  className="hs-dark-mode hs-dark-mode-active:flex hidden relative flex justify-center items-center size-7 border border-gray-200 text-gray-500 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                  className="hs-dark-mode hs-dark-mode-active:flex hidden relative flex justify-center items-center size-7 border border-gray-200 text-gray-500 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:border-slate-700 dark:text-slate-400 dark:hover:bg-slate-700 dark:focus:bg-slate-700"
                   data-hs-theme-click-value="light"
                 >
                   <span className="sr-only">Light</span>

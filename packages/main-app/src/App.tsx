@@ -18,7 +18,7 @@ function App() {
   }, [location.pathname]);
 
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-screen flex flex-col bg-white dark:bg-slate-800">
       <div className="flex flex-row">
         <Header />
       </div>
