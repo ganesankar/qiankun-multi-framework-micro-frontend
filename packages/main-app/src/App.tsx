@@ -5,12 +5,15 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="h-screen flex flex-col">
-      <div className="flex ">
+      <div className="flex flex-row">
         <Header />
       </div>
       <div className="flex flex-1 w-screen overflow-auto">
-        <div id="sub-app"></div>
-        <Outlet />
+        {" "}
+        <div className="w-screen">
+          <div id="sub-app"></div>
+          <Outlet />
+        </div>
       </div>
       <div className="flex w-screen">
         <Footer />
