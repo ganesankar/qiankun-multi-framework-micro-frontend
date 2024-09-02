@@ -10,6 +10,7 @@
     "@types/node": "^16.18.96",
     "@types/react": "^18.2.75",
     "@types/react-dom": "^18.2.24",
+    "preline": "^2.4.1",
     "qiankun": "^2.10.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

@@ -73,5 +73,5 @@ registerMicroApps(microApps, {
     },
   ],
 });
-debugger;
+//debugger;
 start();
