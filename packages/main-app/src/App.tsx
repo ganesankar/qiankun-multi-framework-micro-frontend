@@ -1,6 +1,6 @@
-import { useState , useEffect } from "react";
+import { useState, useEffect } from "react";
 import { MicroAppStateActions } from "qiankun";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 import "preline/preline";
 import { IStaticMethods } from "preline/preline";
 import "./App.css";
@@ -8,7 +8,7 @@ declare global {
   interface Window {
     HSStaticMethods: IStaticMethods;
   }
-} 
+}
 function App({
   globalStateActions,
 }: {
@@ -21,7 +21,6 @@ function App({
     window.HSStaticMethods.autoInit();
   }, [location.pathname]);
 
-
   const onCountButtonClick = () => {
     setCount((count) => count + 1);
     globalStateActions.setGlobalState({ count: count + 1 });
@@ -32,10 +31,10 @@ function App({
       <header className="flex flex-wrap sm:justify-start sm:flex-nowrap w-full bg-white text-sm py-3 dark:bg-neutral-800">
         <nav className="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between">
           <a
-            className="sm:order-1 flex-none text-xl font-semibold dark:text-white focus:outline-none focus:opacity-80"
+            className="sm:order-1 flex-none text-xl font-semibold text-gray-600 dark:text-white focus:outline-none focus:opacity-80"
             href="#"
           >
-            Brand
+            Qiankun MFE
           </a>
           <div className="sm:order-3 flex items-center gap-x-2">
             <button
@@ -86,13 +85,15 @@ function App({
             >
               Button
             </button>
+
             <button
               type="button"
-              className="hs-dark-mode hs-dark-mode-active:hidden inline-flex items-center gap-x-2 py-2 px-3 bg-white/10 rounded-full text-sm text-white hover:bg-white/20 focus:outline-none focus:bg-white/20"
+              className="hs-dark-mode hs-dark-mode-active:hidden relative flex justify-center items-center size-7 border border-gray-200 text-gray-500 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
               data-hs-theme-click-value="dark"
             >
+              <span className="sr-only">Dark</span>
               <svg
-                className="shrink-0 size-4"
+                className="shrink-0 size-3.5"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -105,15 +106,15 @@ function App({
               >
                 <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
               </svg>
-              Dark
             </button>
             <button
               type="button"
-              className="hs-dark-mode hs-dark-mode-active:inline-flex hidden items-center gap-x-2 py-2 px-3 bg-white/10 rounded-full text-sm text-white hover:bg-white/20 focus:outline-none focus:bg-white/20"
+              className="hs-dark-mode hs-dark-mode-active:flex hidden relative flex justify-center items-center size-7 border border-gray-200 text-gray-500 rounded-full hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
               data-hs-theme-click-value="light"
             >
+              <span className="sr-only">Light</span>
               <svg
-                className="shrink-0 size-4"
+                className="shrink-0 size-3.5"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -134,7 +135,6 @@ function App({
                 <path d="m6.34 17.66-1.41 1.41"></path>
                 <path d="m19.07 4.93-1.41 1.41"></path>
               </svg>
-              Light
             </button>
           </div>
           <div
@@ -143,30 +143,30 @@ function App({
             aria-labelledby="hs-navbar-alignment-collapse"
           >
             <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
+             
               <a
-                className="font-medium text-blue-500 focus:outline-none"
+                className="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
                 href="#"
-                aria-current="page"
               >
-                Landing
+                React
               </a>
               <a
                 className="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
                 href="#"
               >
-                Account
+                Angular
               </a>
               <a
                 className="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
                 href="#"
               >
-                Work
+                Vue
               </a>
               <a
                 className="font-medium text-gray-600 hover:text-gray-400 focus:outline-none focus:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500 dark:focus:text-neutral-500"
                 href="#"
               >
-                Blog
+                Svelte
               </a>
             </div>
           </div>
@@ -177,7 +177,7 @@ function App({
         <button onClick={onCountButtonClick}>Main app count is {count}</button>
       </div>
       <div
-        id="sub-app-container"
+        id="app-container"
         className="site-layout-background"
         style={{ minHeight: 360 }}
       ></div>
