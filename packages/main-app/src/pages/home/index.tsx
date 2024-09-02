@@ -32,7 +32,7 @@ export default function HomePage() {
           <div className="mt-5 max-w-2xl text-center mx-auto">
             <h1 className="block font-bold text-gray-800 text-3xl md:text-4xl lg:text-5xl dark:text-slate-200">
               Welcome to Qiankun <br />
-              <span className="bg-clip-text bg-gradient-to-tl from-blue-600 to-violet-600 text-transparent">
+              <span className="text-blue-600 dark:text-blue-500">
                 Micro Front End
               </span>
             </h1>
