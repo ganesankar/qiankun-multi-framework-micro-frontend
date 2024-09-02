@@ -16,11 +16,10 @@ const globalStateActions: MicroAppStateActions = initGlobalState({
 });
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    {" "}
+  <React.StrictMode> 
     <BrowserRouter>
       <App globalStateActions={globalStateActions} />
-    </BrowserRouter>
+    </BrowserRouter>  
   </React.StrictMode>
 );
 
@@ -28,13 +27,13 @@ registerMicroApps([
   {
     name: "ReactApp",
     entry: "//localhost:3001",
-    container: "#sub-app-container",
+    container: "#app-container",
     activeRule: "/app-react",
   },
   {
     name: "reactApp",
     entry: "//localhost:3002",
-    container: "#sub-app-container",
+    container: "#app-container",
     activeRule: ["/home", "/app-angular"],
   },
 ]);
