@@ -1,8 +1,15 @@
 const { name } = require('./package');
-module.exports = function override(config, env) {
-    //do stuff with the webpack config...
+const { override, addPostcssPlugins } = require('customize-cra')
+
+const addSitePlugins = () => config => {
     config.output.library = `${name}-[name]`;
     config.output.libraryTarget = 'umd';
     config.output.chunkLoadingGlobal = `webpackJsonp_${name}`;
-    return config;
+    return config
 }
+
+module.exports = override(
+    addPostcssPlugins([require('tailwindcss')]),
+    addSitePlugins(),
+
+)

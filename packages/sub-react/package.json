@@ -3,21 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.96",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.5.2",
     "@types/react": "^18.2.75",
     "@types/react-dom": "^18.2.24",
+    "customize-cra": "^1.0.0",
     "preline": "^2.4.1",
     "qiankun": "^2.10.16",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.3",
+    "react": "^18.3.1",
+    "react-app-rewired": "^2.2.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.1",
     "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "typescript": "^5.5.4",
+    "web-vitals": "^4.2.3"
   },
   "scripts": {
     "dev": "react-app-rewired start",
@@ -44,8 +46,21 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@tailwindcss/forms": "^0.5.8",
+    "@tailwindcss/typography": "^0.5.15",
+    "@types/fslightbox-react": "^1.7.7",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.4.0",
+    "@typescript-eslint/parser": "^8.4.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.9.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.11",
+    "postcss": "^8.4.44",
     "react-app-rewired": "^2.2.1",
-    "tailwindcss": "^3.4.3"
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.2.2",
+    "vite": "^5.4.2"
   }
 }

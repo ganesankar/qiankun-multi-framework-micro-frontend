@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import "preline/preline";
 import { IStaticMethods } from "preline/preline";
 import Header from "./components/Header";
 import Footer from "./components/Footer";

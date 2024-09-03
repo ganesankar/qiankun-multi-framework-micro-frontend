@@ -1,21 +1,32 @@
-import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Outlet, useLocation, NavLink } from "react-router-dom";
+import { IStaticMethods } from "preline/preline";
 
+declare global {
+  interface Window {
+    HSStaticMethods: IStaticMethods;
+  }
+}
 function App() {
+  const location = useLocation();
+  useEffect(() => {
+    window.HSStaticMethods.autoInit();
+  }, [location.pathname]);
+
   return (
-    <div className=" w-screen ">
-      <nav className="bg-white dark:bg-neutral-900">
+    <div className="w-screen flex flex-col">
+      <nav className="bg-white dark:bg-slate-900">
         <div className="max-w-[85rem] w-full mx-auto sm:flex sm:flex-row sm:justify-between sm:items-center sm:gap-x-3 py-3 px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center gap-x-3">
             <div className="grow">
-              <span className="font-semibold whitespace-nowrap text-gray-800 dark:text-neutral-200">
-                My project
+              <span className="font-semibold whitespace-nowrap text-gray-800 dark:text-slate-200">
+                ReactJS
               </span>
             </div>
 
             <button
               type="button"
-              className="hs-collapse-toggle sm:hidden py-1.5 px-2 inline-flex items-center font-medium text-xs rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 focus:outline-none focus:bg-gray-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+              className="hs-collapse-toggle sm:hidden py-1.5 px-2 inline-flex items-center font-medium text-xs rounded-md border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-800 focus:outline-none focus:bg-gray-100 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-700 dark:focus:bg-slate-700"
               data-hs-collapse="#hs-nav-secondary"
               aria-controls="hs-nav-secondary"
               aria-label="Toggle navigation"
@@ -48,21 +59,21 @@ function App() {
                 Overview
               </a>
               <a
-                className="font-medium text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-200 dark:hover:text-blue-500 dark:focus:text-blue-500"
+                className="font-medium text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-slate-200 dark:hover:text-blue-500 dark:focus:text-blue-500"
                 href="#"
                 target="_parent"
               >
                 Features
               </a>
               <a
-                className="font-medium text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-200 dark:hover:text-blue-500 dark:focus:text-blue-500"
+                className="font-medium text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-slate-200 dark:hover:text-blue-500 dark:focus:text-blue-500"
                 href="#"
                 target="_parent"
               >
                 Platforms
               </a>
               <a
-                className="font-medium text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-200 dark:hover:text-blue-500 dark:focus:text-blue-500"
+                className="font-medium text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-slate-200 dark:hover:text-blue-500 dark:focus:text-blue-500"
                 href="#"
                 target="_parent"
               >
@@ -81,13 +92,13 @@ function App() {
           <div className="w-full h-16 flex flex-row gap-5">
             <NavLink
               to="/page1"
-              className="font-medium text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-200 dark:hover:text-blue-500 dark:focus:text-blue-500"
+              className="font-medium text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-slate-200 dark:hover:text-blue-500 dark:focus:text-blue-500"
             >
               <span className=" group-[.active]:text-pink-500">PAGE1</span>
             </NavLink>
             <NavLink
               to="/page2"
-              className="font-medium text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-neutral-200 dark:hover:text-blue-500 dark:focus:text-blue-500"
+              className="font-medium text-sm text-gray-800 hover:text-blue-600 focus:outline-none focus:text-blue-600 dark:text-slate-200 dark:hover:text-blue-500 dark:focus:text-blue-500"
             >
               <span className=" group-[.active]:text-pink-500">PAGE2</span>
             </NavLink>
