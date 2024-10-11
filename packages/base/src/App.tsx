@@ -42,9 +42,6 @@ function App({ apps }: Props) {
         </Navbar.Brand>
         <div className="flex md:order-2">
           <DarkThemeToggle /> &nbsp;
-          <Button className="ml-3 " color="blue">
-            Sign out
-          </Button>
           <Navbar.Toggle />
         </div>
       </Navbar>

@@ -28,12 +28,7 @@ cd qiankun-multi-framework-micro-frontend
 npm install
 ```
     
-4. **Use Lerna to Install Package Dependencies:**  
-```bash
-npx lerna bootstrap
-```
-    
-5. **Run the Applications:**
+4. **Run the Applications:**
  
 Run `npm run start` . This will build and serve `App1`, `App2` & `App3` on ports 3001, 3002 and 3003 respectively.
 Then open http://localhost:3000/ to load HOST app.
