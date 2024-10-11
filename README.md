@@ -9,6 +9,7 @@
 ### App7 (JQuery App, runs at Port 3006) 
 ### App8 (Solidjs App, runs at Port 3007) 
 
+![image](https://github.com/user-attachments/assets/1e624b01-ee0a-423a-bd55-b348a1d6de5f)
 
 ## **Getting Started**
 
