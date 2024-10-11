@@ -1,15 +1,27 @@
 const { name } = require('./package');
-const { override, addPostcssPlugins } = require('customize-cra')
 
-const addSitePlugins = () => config => {
+module.exports = {
+  webpack: (config) => {
     config.output.library = `${name}-[name]`;
     config.output.libraryTarget = 'umd';
-    config.output.chunkLoadingGlobal = `webpackJsonp_${name}`;
-    return config
-}
+    // webpack 5 needs to replace jsonpFunction with chunkLoadingGlobal
+    config.output.chunkLoadingGlobal = `webpackJsonp_${name}`; 
+    config.output.globalObject = 'window';
 
-module.exports = override(
-    addPostcssPlugins([require('tailwindcss')]),
-    addSitePlugins(),
+    return config;
+  },
 
-)
+  devServer: (_) => {
+    const config = _;
+
+    config.headers = {
+      'Access-Control-Allow-Origin': '*',
+    };
+    config.historyApiFallback = true;
+    config.hot = false;
+    config.watchContentBase = false;
+    config.liveReload = false;
+
+    return config;
+  },
+};

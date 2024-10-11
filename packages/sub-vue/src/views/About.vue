@@ -1,0 +1,31 @@
+<script setup
+        lang="ts"
+>
+
+</script>
+
+<template>
+  <div>
+      <div class="p-4 bg-white block sm:flex items-center justify-between border-b border-gray-200  dark:bg-gray-800 dark:border-gray-700">
+        <div class="w-full mb-1">
+          <h1 class="text-xl  text-gray-900 sm:text-2xl dark:text-white">
+            About
+          </h1>
+          <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+            
+        </div>
+      </div>
+    </div>
+</template>
+
+<style scoped>
+.logo {
+  height: 14em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+</style>

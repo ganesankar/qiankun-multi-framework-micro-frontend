@@ -1,0 +1,30 @@
+{
+  "name": "sub-vue",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "flowbite": "^2.5.1",
+    "vite-plugin-qiankun": "^1.0.15",
+    "vue": "^3.4.31",
+    "vue-router": "^4.4.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.23.2",
+    "@types/node": "^20.10.1",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^9.7.0",
+    "postcss": "^8.4.39",
+    "sass": "^1.77.8",
+    "tailwindcss": "^3.4.6",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.4",
+    "vue-tsc": "^2.0.24"
+  }
+}

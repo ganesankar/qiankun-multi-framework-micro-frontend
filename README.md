@@ -1,20 +1,14 @@
 # Qiankun(Single-SPA) based Multi Framework - Micro Frontend setup using  Lerna in Monorepo 
 
-### App1 (Remote App, built with React)
-### App2 (Host App, built with Angular)
-### App3 (Remote App, built with Vue)
+### App1 (React Host App, runs at Port 3000) 
+### App2 (React App, runs at Port 3001) 
+### App3 (Vue App, runs at Port 3002) 
+### App4 (Angular App, runs at Port 3003) 
+### App5 (Svelte App, runs at Port 3004) 
+### App6 (Preact App, runs at Port 3005) 
+### App7 (JQuery App, runs at Port 3006) 
+### App8 (Solidjs App, runs at Port 3007) 
 
-## Running code
-
-## **Included Projects**
-
-### **0. [Root](https://react.dev/)**
-
-common app to load all other apps
-
-### **1. [React Child 1](https://react.dev/)**
-
-basic react app
 
 ## **Getting Started**
 
