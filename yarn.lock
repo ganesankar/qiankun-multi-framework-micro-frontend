@@ -2997,7 +2997,7 @@
     schema-utils "^4.2.0"
     source-map "^0.7.3"
 
-"@popperjs/core@^2.11.8", "@popperjs/core@^2.9.3":
+"@popperjs/core@^2.11.2", "@popperjs/core@^2.11.8", "@popperjs/core@^2.9.3":
   version "2.11.8"
   resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz"
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
@@ -13988,6 +13988,13 @@ preact@^10.0.0, preact@^10.16.0, preact@^10.4.0:
   version "10.24.2"
   resolved "https://registry.npmjs.org/preact/-/preact-10.24.2.tgz"
   integrity sha512-1cSoF0aCC8uaARATfrlz4VCBqE8LwZwRfLgkxJOQwAlQt6ayTmi0D9OF7nXid1POI5SZidFuG9CnlXbDfLqY/Q==
+
+preline@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.npmjs.org/preline/-/preline-2.5.0.tgz"
+  integrity sha512-UC+ddXHsL3xXU0TogA/O3DGqy+xF2/xQYnTSR6vpzEpD3+Te5R9m4NbQy/zhAkFMAfQKKJ9yQBgpA3ML5nPYGg==
+  dependencies:
+    "@popperjs/core" "^2.11.2"
 
 prelude-ls@^1.2.1:
   version "1.2.1"
