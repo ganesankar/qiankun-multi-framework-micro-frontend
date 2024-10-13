@@ -99,7 +99,7 @@ function App({ apps }: Props) {
               <div className="grid grid-cols-1 md:grid-cols-3 p-3">
                 {apps.map((app: IApp) => (
                   <Card
-                    className="m-3"
+                    className="m-3 bg-white border border-gray-200 shadow-sm rounded-xl p-4 md:p-5 dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400"
                     key={`adminLink${app.activeRule}`}
                   >
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
